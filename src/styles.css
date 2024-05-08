@@ -1,7 +1,7 @@
 :root {
   --primaryColor: #ffffff;
   --secondaryColor: #ac3e07;
-  --thirdColor: #232323;
+  --thirdColor: #000000;
   --fouthColor: #ffcc00;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 #header {
-  background: url(../assets/women-in-tech-1.jpeg);
+  background: var(--thirdColor);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -49,8 +49,8 @@ nav {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 nav ul li {
@@ -60,7 +60,7 @@ nav ul li {
 }
 nav ul li a {
   font-family: Great;
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
   text-decoration: none;
   font-size: 20px;
   position: relative;
@@ -70,7 +70,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background-color: var(--secondaryColor);
+  background-color: var(--primaryColor);
   position: absolute;
   left: 0;
   transition: 0.5s;
@@ -79,4 +79,17 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 25px;
+  color: var(--primaryColor);
+  font-family: Callume;
+}
+
+.header-text h1 {
+  font-family: Callisa;
+  font-size: 30px;
+  margin-top: 30px;
 }
