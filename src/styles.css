@@ -1,0 +1,37 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #ac3e07;
+  --thirdColor: #232323;
+  --fouthColor: #ffcc00;
+}
+
+@font-face {
+  font-family: Callisa;
+  src: url(../fonts/CallisaBeauty.ttf);
+}
+@font-face {
+  font-family: Callume;
+  src: url(../fonts/Callume.ttf);
+}
+@font-face {
+  font-family: Great;
+  src: url(../fonts/Great.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid brown;
+  margin: 0;
+}
+
+h1 {
+  font-family: Callisa;
+}
+
+p {
+  font-family: Callume;
+}
+
+h4 {
+  font-family: Great;
+}
