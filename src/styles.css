@@ -3,6 +3,7 @@
   --secondaryColor: #ac3e07;
   --thirdColor: #000000;
   --fouthColor: #ffcc00;
+  --rainbow: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
 }
 
 @font-face {
@@ -49,8 +50,22 @@ nav {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-name {
+  text-align: center;
+  letter-spacing: -4px;
+  margin-top: 25%;
+  bottom: 0;
+  font-size: 25px;
+  z-index: 1;
+  font-family: Great;
+  font-style: italic;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav ul li {
@@ -82,14 +97,34 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 25px;
-  color: var(--primaryColor);
   font-family: Callume;
 }
 
 .header-text h1 {
   font-family: Callisa;
+  color: var(--primaryColor);
   font-size: 30px;
   margin-top: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 3.5s;
+  animation-timing-function: steps(50, end);
+  animation-fill-mode: forwards;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+.header-text p {
+  margin-top: 10%;
+  text-align: right;
+  justify-content: end;
 }
